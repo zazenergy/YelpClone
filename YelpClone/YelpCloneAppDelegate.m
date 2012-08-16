@@ -15,10 +15,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.viewController = [[YelpCloneViewController alloc] initWithNibName:@"YelpCloneViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    
+    YelpCloneViewController* mapViewController = [YelpCloneViewController new];
+    
+    UINavigationController* navController = [[UINavigationController alloc]initWithRootViewController:mapViewController];
+    
+    self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

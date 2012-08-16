@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0D69BD804E2C4BE994192C32 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8912B3695145759B67138F /* libPods.a */; };
+		3460F87815DC4C9D00722BA6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3460F87715DC4C9D00722BA6 /* MapKit.framework */; };
+		3460F87C15DC538D00722BA6 /* SimpleAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3460F87B15DC538D00722BA6 /* SimpleAnnotation.m */; };
+		3460F88015DC82EE00722BA6 /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3460F87E15DC82EE00722BA6 /* ReviewViewController.m */; };
+		3460F88115DC82EE00722BA6 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3460F87F15DC82EE00722BA6 /* ReviewViewController.xib */; };
 		34B607C915DB1F9E005BC75E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B607C815DB1F9E005BC75E /* UIKit.framework */; };
 		34B607CB15DB1F9E005BC75E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B607CA15DB1F9E005BC75E /* Foundation.framework */; };
 		34B607CD15DB1F9E005BC75E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B607CC15DB1F9E005BC75E /* CoreGraphics.framework */; };
@@ -21,6 +25,12 @@
 
 /* Begin PBXFileReference section */
 		060DB132E4E249058C8DEFA3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		3460F87715DC4C9D00722BA6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3460F87A15DC538D00722BA6 /* SimpleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAnnotation.h; sourceTree = "<group>"; };
+		3460F87B15DC538D00722BA6 /* SimpleAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAnnotation.m; sourceTree = "<group>"; };
+		3460F87D15DC82EE00722BA6 /* ReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewViewController.h; sourceTree = "<group>"; };
+		3460F87E15DC82EE00722BA6 /* ReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewViewController.m; sourceTree = "<group>"; };
+		3460F87F15DC82EE00722BA6 /* ReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewViewController.xib; sourceTree = "<group>"; };
 		34B607C415DB1F9E005BC75E /* YelpClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YelpClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B607C815DB1F9E005BC75E /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		34B607CA15DB1F9E005BC75E /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3460F87815DC4C9D00722BA6 /* MapKit.framework in Frameworks */,
 				34B607F115DB3392005BC75E /* CoreLocation.framework in Frameworks */,
 				34B607C915DB1F9E005BC75E /* UIKit.framework in Frameworks */,
 				34B607CB15DB1F9E005BC75E /* Foundation.framework in Frameworks */,
@@ -57,6 +68,7 @@
 		34B607B915DB1F9E005BC75E = {
 			isa = PBXGroup;
 			children = (
+				3460F87715DC4C9D00722BA6 /* MapKit.framework */,
 				34B607CE15DB1F9E005BC75E /* YelpClone */,
 				34B607C715DB1F9E005BC75E /* Frameworks */,
 				34B607C515DB1F9E005BC75E /* Products */,
@@ -92,6 +104,11 @@
 				34B607DA15DB1F9E005BC75E /* YelpCloneViewController.h */,
 				34B607DB15DB1F9E005BC75E /* YelpCloneViewController.m */,
 				34B607DD15DB1F9E005BC75E /* YelpCloneViewController.xib */,
+				3460F87D15DC82EE00722BA6 /* ReviewViewController.h */,
+				3460F87E15DC82EE00722BA6 /* ReviewViewController.m */,
+				3460F87F15DC82EE00722BA6 /* ReviewViewController.xib */,
+				3460F87A15DC538D00722BA6 /* SimpleAnnotation.h */,
+				3460F87B15DC538D00722BA6 /* SimpleAnnotation.m */,
 				34B607CF15DB1F9E005BC75E /* Supporting Files */,
 			);
 			path = YelpClone;
@@ -163,6 +180,7 @@
 			files = (
 				34B607D315DB1F9E005BC75E /* InfoPlist.strings in Resources */,
 				34B607DF15DB1F9E005BC75E /* YelpCloneViewController.xib in Resources */,
+				3460F88115DC82EE00722BA6 /* ReviewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +211,8 @@
 				34B607D515DB1F9E005BC75E /* main.m in Sources */,
 				34B607D915DB1F9E005BC75E /* YelpCloneAppDelegate.m in Sources */,
 				34B607DC15DB1F9E005BC75E /* YelpCloneViewController.m in Sources */,
+				3460F87C15DC538D00722BA6 /* SimpleAnnotation.m in Sources */,
+				3460F88015DC82EE00722BA6 /* ReviewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
